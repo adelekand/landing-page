@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
 import { Company } from "../FeaturedCompanies";
-import BriefCase from "../../assets/images/icon-briefcase.png";
+import BriefCase from "../../assets/images/icon-briefcase.svg";
 
 interface CompanyItemProps {
   company: Company;
