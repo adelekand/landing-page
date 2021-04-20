@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components/macro";
 import Button from "../Button";
 import { Section } from "../Section";
-import Banner from "../../assets/images/banner.png";
 
 const StyledHeroSection = styled.div`
   height: 540px;
@@ -12,7 +11,8 @@ const StyledHeroSection = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  background: url(${Banner}) top left/cover no-repeat;
+  background: url("https://res.cloudinary.com/dm1kh3yma/image/upload/v1618902214/banner.png")
+    top left/cover no-repeat;
 
   @media only screen and (max-width: 768px) {
     height: 480px;
