@@ -1,3 +1,4 @@
+import React from "react";
 import { createGlobalStyle } from "styled-components";
 import HeroSection from "./components/HeroSection";
 import NewestJobs from "./components/NewestJobs";
