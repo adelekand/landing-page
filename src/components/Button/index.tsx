@@ -35,20 +35,22 @@ const StyledButton = styled.button`
   justify-content: center;
   display: flex;
   color: #fff;
-  ${({ size }: any) => getSizeStyles(size)}
+  ${({ size }: ButtonSize) => getSizeStyles(size!)}
   cursor: pointer;
 `;
 
 const Button: React.FC<
   ButtonProps & React.RefAttributes<HTMLButtonElement>
-> = forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ size = "lg", ...props }, ref) => {
-    return (
-      <StyledButton size={size} ref={ref} {...props}>
-        {props.children}
-      </StyledButton>
-    );
-  }
-);
+> = forwardRef<HTMLButtonElement, ButtonProps>(({ ...props }, ref) => {
+  return (
+    <StyledButton ref={ref} {...props}>
+      {props.children}
+    </StyledButton>
+  );
+});
+
+Button.defaultProps = {
+  size: "lg"
+};
 
 export default Button;
