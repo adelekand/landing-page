@@ -35,7 +35,7 @@ const StyledButton = styled.button`
   justify-content: center;
   display: flex;
   color: #fff;
-  ${({ size }) => getSizeStyles(size)}
+  ${({ size }: any) => getSizeStyles(size)}
   cursor: pointer;
 `;
 

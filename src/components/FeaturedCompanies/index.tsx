@@ -19,7 +19,7 @@ const CompanyList = styled.div`
   }
 
   @media only screen and (max-width: 960px) {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-row-gap: 50px;
   }
 
